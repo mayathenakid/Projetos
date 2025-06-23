@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo e Cinema Brasileiro</title>
+    <style>
+        /* Reset e estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #cc0000, #8b0000);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Navegação */
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #cc0000;
+        }
+        
+        /* Seções principais */
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 30px;
+        }
+        
+        .content {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #cc0000;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h3 {
+            color: #8b0000;
+            margin: 15px 0 10px;
+        }
+        
+        /* Artigos */
+        article {
+            margin-bottom: 25px;
+        }
+        
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .main-section {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 1;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+        
+        /* Efeitos especiais */
+        .flamengo-theme {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .cinema-theme {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 5px solid #cc0000;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Flamengo e Cinema Brasileiro</h1>
+            <p>Duas paixões nacionais em um só lugar</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#flamengo">Flamengo</a></li>
+            <li><a href="#cinema">Cinema Brasileiro</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="main-section">
+            <div class="content">
+                <section id="flamengo">
+                    <h2>Clube de Regatas do Flamengo</h2>
+                    
+                    <article>
+                        <img src="https://via.placeholder.com/800x400?text=Flamengo+Campeão" alt="Flamengo Campeão">
+                        <h3>O Maior do Brasil</h3>
+                        <div class="flamengo-theme">
+                            <p>O Clube de Regatas do Flamengo, fundado em 1895, é um dos clubes mais populares e vitoriosos do futebol brasileiro. Com milhões de torcedores em todo o país, o Flamengo é conhecido como <span class="highlight">"O Mais Querido"</span> do Brasil.</p>
+                            <p>Entre seus principais títulos estão a Copa Libertadores da América (1981, 2019 e 2022), o Mundial Interclubes (1981) e inúmeros campeonatos brasileiros e estaduais.</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <h3>Ídolos Rubro-Negros</h3>
+                        <p>O Flamengo já revelou e teve em seu elenco grandes nomes do futebol mundial:</p>
+                        <ul>
+                            <li>Zico - O "Galinho de Quintino", maior ídolo da história do clube</li>
+                            <li>Júnior - Lateral esquerdo lendário</li>
+                            <li>Adílio - Meia campeão do mundo em 1981</li>
+                            <li>Gabigol - Artilheiro e herói das conquistas recentes</li>
+                        </ul>
+                    </article>
+                </section>
+                
+                <section id="cinema">
+                    <h2>Cinema Brasileiro</h2>
+                    
+                    <article>
+                        <img src="https://via.placeholder.com/800x400?text=Cinema+Brasileiro" alt="Cinema Brasileiro">
+                        <h3>Uma História de Superação</h3>
+                        <div class="cinema-theme">
+                            <p>O cinema brasileiro, apesar das dificuldades, sempre produziu obras de grande qualidade técnica e artística. Desde os tempos da <span class="highlight">Vera Cruz</span> até o moderno cinema digital, o Brasil conta com diretores e atores de talento reconhecido internacionalmente.</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <h3>Filmes Marcantes</h3>
+                        <p>Alguns filmes que marcaram a história do cinema nacional:</p>
+                        <ul>
+                         <p>O Flamengo já foi tema ou cenário de vários filmes e documentários brasileiros:</p>
+                        <ul>
+                            <li>"Fla x Flu" (2011) - Documentário sobre o clássico carioca</li>
+                            <li>"Zico - O Filme" (2021) - Documentário sobre o ídolo rubro-negro</li>
+                            <li>"Flamengo - O Filme" (2019) - Documentário sobre a temporada vitoriosa</li>
+                        </ul>
+                    </article>
+                    
+                    <article>
+                        <h3>Atores Torcedores</h3>
+                        <p>Muitos atores brasileiros são torcedores declarados do Flamengo:</p>
+                        <ul>
+                            <li>Lázaro Ramos</li>
+                            <li>Taís Araújo</li>
+                            <li>Marcos Palmeira</li>
+                            <li>Dira Paes</li>
+                        </ul>
+                    </article>
+                    
+                    <article>
+                        <h3>Próximos Jogos</h3>
+                        <p>Confira a agenda do Flamengo:</p>
+                        <ul>
+                            <li>Flamengo x Vasco - 25/06</li>
+                            <li>Flamengo x Palmeiras - 30/06</li>
+                            <li>Atlético-MG x Flamengo - 05/07</li>
+                        </ul>
+                    </article>
+                    
+                    <article>
+                        <h3>Estreias do Cinema</h3>
+                        <p>Filmes nacionais em cartaz:</p>
+                        <ul>
+                            <li>Oeste Outra Vez - Drama</li>
+                            <li>O Rei do Pedaço - Comédia</li>
+                            <li>Maré Vermelha - Suspense</li>
+                        </ul>
+                    </article>
+                </section>
+            </aside>
+        </section>
+    </div>
+    
+    <footer id="sobre">
+        <div class="container">
+            <p>&copy; 2023 Flamengo e Cinema Brasileiro - Todos os direitos reservados</p>
+            <p>Site desenvolvido para fins educacionais</p>
+        </div>
+    </footer>
+</body>
+</html>                          <li>O Pagador de Promessas (1962) - Primeiro filme brasileiro indicado ao Oscar</li>
+                            <li>Dona Flor e Seus Dois Maridos (1976) - Adaptação do livro de Jorge Amado</li>
+                            <li>Central do Brasil (1998) - Vencedor do Urso de Ouro em Berlim</li>
+                            <li>Cidade de Deus (2002) - Reconhecido mundialmente</li>
+                            <li>Bacurau (2019) - Premiação em Cannes</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+            
+            <aside class="sidebar">
+                <section id="curiosidades">
+                    <h2>Curiosidades</h2>
+                    
+                    <article>
+                        <h3>Flamengo no Cinema</h3>
+ 
